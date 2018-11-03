@@ -97,7 +97,7 @@ $(function() {
     });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
-    describe('Changes the content when new feed is selected', function() {
+    describe('New Feed Selection', function() {
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
