@@ -1,6 +1,6 @@
 # Project Overview
 
-To run the application simply open the index.html file. All the tests will be executed and the results will be displayied on screen.
+To run the application simply open the index.html file. All the tests will be executed and the results will be displayed on screen.
 
 It was created 4 test suits and 7 test specs.
 
