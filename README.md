@@ -4,17 +4,18 @@ To run the application simply open the index.html file. All the tests will be ex
 
 It was created 4 test suits and 7 test specs.
 
-## RSS Feeds
-### are defined
-### have a url
-### have a name
+## Test Suits
+### RSS Feeds
+#### are defined
+#### have a url
+#### have a name
 
-## The menu
-### is hidden by default
-### Changes visibility when it is clicked
+### The menu
+#### is hidden by default
+#### Changes visibility when it is clicked
 
-## Initial Entries
-### Load feed works properly
+### Initial Entries
+#### Load feed works properly
 
-## New Feed Selection
-### Load feed changes properly
+### New Feed Selection
+#### Load feed changes properly
