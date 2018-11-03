@@ -75,10 +75,10 @@ $(function() {
             $('.menu-icon-link').click();
             expect($('body').hasClass('menu-hidden')).toBe(true);
         })
-    })
+    });
 
     /* TODO: Write a new test suite named "Initial Entries" */
-
+    describe('Initial Entries', function() {
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
@@ -86,10 +86,36 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
+         beforeEach(function(done) {
+             loadFeed(0, done);
+         })
 
+        it('Load feed works properly', function(done) {
+            expect($('.feed .entry').length > 0).toBe(true);
+            done();
+        });
+    });
+
+    /* TODO: Write a new test suite named "New Feed Selection" */
+    describe('Changes the content when new feed is selected', function() {
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+        var article;
+
+        beforeEach(function(done) {
+            loadFeed(0, done);
+            article = $('.feed .entry')[0].innerHTML;
+        })
+
+       it('Load feed works properly', function(done) {
+            var checkForChanges = function(){
+                var changedArticle = $('.feed .entry')[0].innerHTML;
+                expect(article == changedArticle).toBe(false);
+                done();
+            }
+            loadFeed(1, checkForChanges);
+       });
+    });
 }());
