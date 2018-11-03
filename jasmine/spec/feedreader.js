@@ -109,7 +109,7 @@ $(function() {
             article = $('.feed .entry')[0].innerHTML;
         })
 
-       it('Load feed works properly', function(done) {
+       it('Load feed changes properly', function(done) {
             var checkForChanges = function(){
                 var changedArticle = $('.feed .entry')[0].innerHTML;
                 expect(article == changedArticle).toBe(false);
